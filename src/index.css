@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-size: 13px;
+    }
+}
+
+@layer utilities {
+    .tooltip:after {
+        content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top:12px solid black;
+        bottom: -12px;
+        left: 50%;
+    }
+}
